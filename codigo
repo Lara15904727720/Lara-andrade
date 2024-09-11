@@ -1,0 +1,18 @@
+# Inicializa a soma e a variável de entrada
+soma = 0
+
+# Estrutura de repetição (loop while)
+while True:
+    # Solicita ao usuário para inserir um número
+    numero = float(input("Insira um número (ou um número negativo para sair): "))
+    
+    # Estrutura de tomada de decisão (if)
+    if numero < 0:
+        print("Número negativo detectado. Saindo...")
+        break
+    else:
+        soma += numero
+        print(f"A soma atual dos números positivos é: {soma}")
+
+# Exibe a soma final
+print(f"A soma total dos números positivos inseridos é: {soma}")
